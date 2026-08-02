@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feng Shui — Joshua Trommel</title>
+<link rel="preload" href="fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Geist-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Geist-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css">
+<style>
+@font-face { font-family:'Geist'; src:url('fonts/Geist-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Geist'; src:url('fonts/Geist-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
+@font-face { font-family:'Geist'; src:url('fonts/Geist-SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:var(--font-body); font-weight:400;
+  background:var(--bg); color:var(--text);
+  line-height:1.6; min-height:100dvh;
+  -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.page {
+  display:grid;
+  grid-template-columns:220px 1fr;
+  grid-template-rows:auto 1fr;
+  max-width:1060px;
+  margin:0 auto;
+  padding:clamp(2rem,6vw,4rem) clamp(1.5rem,4vw,2.5rem) 6rem;
+  gap:0 3rem;
+}
+@media(max-width:860px) {
+  .page { grid-template-columns:1fr; }
+  .toc-wrap { display:none; }
+}
+
+.toc-wrap { grid-column:1; grid-row:2; position:relative; }
+.toc { position:sticky; top:2.5rem; display:flex; flex-direction:column; gap:0; }
+.toc-label {
+  font-size:0.6875rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--text3); margin-bottom:0.75rem;
+}
+.toc a {
+  display:block; font-size:0.8125rem; color:var(--text3); text-decoration:none;
+  padding:0.3rem 0 0.3rem 0.875rem; border-left:2px solid var(--border);
+  line-height:1.35; transition:color 0.15s, border-color 0.15s;
+}
+.toc a:hover { color:var(--text2); }
+.toc a.active { color:var(--accent); border-left-color:var(--accent); font-weight:500; }
+
+.chapter-jump {
+  display:none; width:100%; margin-bottom:1.5rem; padding:0.5rem 0.75rem;
+  background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-sm);
+  color:var(--text2); font-family:var(--font-body); font-size:0.875rem; appearance:none; cursor:pointer;
+}
+@media(max-width:860px) { .chapter-jump { display:block; } }
+
+.main { grid-column:2; grid-row:2; min-width:0; }
+@media(max-width:860px) { .main { grid-column:1; } }
+
+.hero { margin-bottom:3rem; padding-bottom:2rem; border-bottom:1px solid var(--border2); }
+h1.title {
+  font-family:var(--font-display); font-size:clamp(2rem,5vw,2.75rem); font-weight:900;
+  letter-spacing:-0.02em; line-height:1.1; color:var(--text); margin-bottom:0.75rem;
+}
+.hero-meta { font-size:0.8125rem; color:var(--text3); display:flex; gap:1rem; flex-wrap:wrap; }
+.hero-meta span::before { content:'· '; }
+.hero-meta span:first-child::before { content:''; }
+
+#content { font-size:0.9375rem; color:var(--text2); }
+#content h1, #content h2 { font-family:var(--font-display); color:var(--text); line-height:1.25; margin-top:2.5rem; margin-bottom:0.75rem; }
+#content h1 { font-size:1.5rem; }
+#content h2 { font-size:1.25rem; padding-left:0.875rem; border-left:3px solid var(--accent); margin-left:-0.875rem; }
+#content h3 { font-size:1rem; font-weight:600; color:var(--text); margin:1.5rem 0 0.5rem; }
+#content p, #content ul, #content ol { margin-bottom:1rem; }
+#content ul, #content ol { padding-left:1.4rem; }
+#content li { margin-bottom:0.4rem; }
+#content strong { color:var(--text); font-weight:600; }
+#content hr { border:none; border-top:1px solid var(--border); margin:2.5rem 0; }
+
+.empty-state { color:var(--text3); font-size:0.9375rem; padding:2rem 0; }
+footer { margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border2); }
+footer a { font-size:0.8125rem; color:var(--text3); text-decoration:none; }
+footer a:hover { color:var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <select class="chapter-jump" id="chapter-jump" aria-label="Jump to chapter">
+    <option value="">Jump to chapter…</option>
+  </select>
+
+  <aside class="toc-wrap">
+    <nav class="toc" id="toc">
+      <div class="toc-label">Contents</div>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="hero">
+      <h1 class="title">Feng Shui</h1>
+      <div class="hero-meta" id="hero-meta"></div>
+    </div>
+    <div id="content"><div class="empty-state">Loading&hellip;</div></div>
+    <footer>
+      <a href="https://heyitsmejosh.com">heyitsmejosh.com</a>
+    </footer>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+
+var contentEl = document.getElementById('content');
+var metaEl = document.getElementById('hero-meta');
+var tocEl = document.getElementById('toc');
+var jumpEl = document.getElementById('chapter-jump');
+
+function buildTOC() {
+  var headings = contentEl.querySelectorAll('h2');
+  if (!headings.length) return;
+  headings.forEach(function(h, i) {
+    var id = 'ch-' + i;
+    h.id = id;
+    var a = document.createElement('a');
+    a.href = '#' + id;
+    a.textContent = h.textContent;
+    tocEl.appendChild(a);
+    var opt = document.createElement('option');
+    opt.value = '#' + id;
+    opt.textContent = h.textContent;
+    jumpEl.appendChild(opt);
+  });
+  jumpEl.addEventListener('change', function() {
+    if (this.value) {
+      document.querySelector(this.value).scrollIntoView({behavior:'smooth'});
+      this.value = '';
+    }
+  });
+  var links = tocEl.querySelectorAll('a');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        var active = tocEl.querySelector('a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  headings.forEach(function(h) { observer.observe(h); });
+}
+
+fetch('content.md')
+  .then(function(res) { return res.text(); })
+  .then(function(md) {
+    contentEl.innerHTML = marked.parse(md);
+    var h2s = contentEl.querySelectorAll('h2');
+    var words = md.trim().split(/\s+/).length;
+    var mins = Math.max(1, Math.round(words / 200));
+    var s1 = document.createElement('span'); s1.textContent = h2s.length + ' chapters'; metaEl.appendChild(s1);
+    var s2 = document.createElement('span'); s2.textContent = mins + ' min read'; metaEl.appendChild(s2);
+    buildTOC();
+  })
+  .catch(function() {
+    contentEl.innerHTML = '<div class="empty-state">Content failed to load.</div>';
+  });
+</script>
+
+</body>
+</html>

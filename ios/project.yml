@@ -1,0 +1,28 @@
+name: FengShui
+options:
+  bundleIdPrefix: com.heyitsmejosh
+targets:
+  FengShui:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [FengShui]
+    info:
+      path: FengShui/Info.plist
+      properties:
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.heyitsmejosh.fengshui
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: QMM486NPYC
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.lifestyle
+schemes:
+  FengShui:
+    build:
+      targets:
+        FengShui: all
+    shared: true

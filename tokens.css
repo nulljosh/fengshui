@@ -1,0 +1,66 @@
+/* synced from portfolio's fredrika theme (nulljosh.github.io/tokens-fredrika.css), 2026-07-14 */
+/* display + body both Geist / system sans — no serif */
+
+:root {
+  --bg: #fcfcfc;
+  --bg2: #f5f5f5;
+  --text: #0a0a0a;
+  --text2: rgba(10,10,10,0.45);
+  --text3: rgba(10,10,10,0.55);
+  --accent: #171717;
+  --accent2: #d4d4d4;
+  --accent-dot: #171717;
+  --border: #f0f0f0;
+  --border2: #e5e5e5;
+
+  --font-display: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font: var(--font-body);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 100px;
+
+  --shadow-sm: 0 1px 4px rgba(10,10,10,0.08);
+  --shadow-md: 0 4px 14px rgba(10,10,10,0.12);
+  --shadow-lg: 0 8px 28px rgba(10,10,10,0.16);
+
+  --spring: cubic-bezier(0.34,1.56,0.64,1);
+  --ease: cubic-bezier(0.16,1,0.3,1);
+
+  --cell0: #ede0d0;
+  --cell1: #fde68a;
+  --cell2: #F9C31F;
+  --cell3: #f05c2a;
+  --cell4: #E4002B;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --bg2: #121212;
+  --text: #fafafa;
+  --text2: rgba(250,250,250,0.45);
+  --text3: rgba(250,250,250,0.55);
+  --accent: #e5e5e5;
+  --border: #1d1d1d;
+  --border2: #262626;
+  --cell0: #2a2118;
+  --cell1: #7a5c1a;
+  --cell2: #F9C31F;
+  --cell3: #f05c2a;
+  --cell4: #E4002B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0a0a;
+    --bg2: #121212;
+    --text: #fafafa;
+    --text2: rgba(250,250,250,0.45);
+    --text3: rgba(250,250,250,0.55);
+    --accent: #e5e5e5;
+    --border: #1d1d1d;
+    --border2: #262626;
+  }
+}

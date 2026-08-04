@@ -20,6 +20,11 @@ targets:
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: QMM486NPYC
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.lifestyle
+        # Without an entitlements file the signed bundle carries no
+        # application-identifier while the embedded profile does — Apple rejects
+        # that combination for TestFlight with ITMS-90886. Hand-committed rather
+        # than generated via xcodegen `entitlements.properties` (drops keys).
+        CODE_SIGN_ENTITLEMENTS: FengShui.entitlements
 schemes:
   FengShui:
     build:

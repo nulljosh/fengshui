@@ -18,3 +18,7 @@ A pocket guide to fengshui principles, condensed from *Good Fengshui* by Eva Won
 ## Roadmap
 
 See `roadmap.md`.
+
+## Whitepaper
+
+[Technical whitepaper](WHITEPAPER.md)

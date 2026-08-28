@@ -22,3 +22,7 @@ See `roadmap.md`.
 ## Whitepaper
 
 [Technical whitepaper](WHITEPAPER.md)
+
+## Architecture
+
+<img src="architecture.svg" width="600">

@@ -1,6 +1,9 @@
 # Roadmap
 
-- [ ] Register `com.heyitsmejosh.fengshui` bundle ID + ASC app record when ready to ship
+- [ ] iOS is built and parked, not shipping yet -- 2026-08-30. A new bundle ID for a
+  single-book reader is the exact shape Apple rejected seven times in the open
+  4.3(a) wave, and the 5.6 suspension only lifted 2026-08-18. Revisit
+  `com.heyitsmejosh.fengshui` registration once those replies resolve.
 - [ ] Consider macOS target once iOS is stable (see uprighty/ios/project.yml for the pattern)
 - [ ] Add more chapter content beyond the single Good Fengshui summary if the app grows
 

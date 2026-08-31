@@ -54,7 +54,7 @@ body {
   line-height:1.35; transition:color 0.15s, border-color 0.15s;
 }
 .toc a:hover { color:var(--text2); }
-.toc a.active { color:var(--accent); border-left-color:var(--accent); font-weight:500; }
+.toc a.active { color: var(--link, var(--accent)); border-left-color: var(--link, var(--accent)); font-weight:500; }
 
 .chapter-jump {
   display:none; width:100%; margin-bottom:1.5rem; padding:0.5rem 0.75rem;
@@ -85,7 +85,7 @@ h1.title {
   transition:color 0.15s, border-color 0.15s, background 0.15s;
 }
 .tabs button:hover { color:var(--text2); }
-.tabs button[aria-selected="true"] { color:var(--bg); background:var(--accent); border-color:var(--accent); }
+.tabs button[aria-selected="true"] { color:var(--bg); background:var(--accent); border-color: var(--link, var(--accent)); }
 
 body[data-view="assess"] #read-view { display:none; }
 body[data-view="assess"] .toc-wrap { visibility:hidden; }
@@ -126,7 +126,7 @@ body[data-view="read"] #assess-view { display:none; }
   color:var(--text3); cursor:pointer; transition:color 0.15s, border-color 0.15s;
 }
 .opts button:hover { color:var(--text2); border-color:var(--text3); }
-.opts button[aria-pressed="true"] { color:var(--text); border-color:var(--accent); font-weight:500; }
+.opts button[aria-pressed="true"] { color:var(--text); border-color: var(--link, var(--accent)); font-weight:500; }
 .q-note {
   font-size:0.8125rem; color:var(--text3); margin-top:0.75rem;
   padding-left:0.875rem; border-left:2px solid var(--border2);
@@ -154,7 +154,7 @@ body[data-view="read"] #assess-view { display:none; }
 .empty-state { color:var(--text3); font-size:0.9375rem; padding:2rem 0; }
 footer { margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border2); }
 footer a { font-size:0.8125rem; color:var(--text3); text-decoration:none; }
-footer a:hover { color:var(--accent); }
+footer a:hover { color: var(--link, var(--accent)); }
 </style>
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#171717">

@@ -4,6 +4,8 @@
 
 ![license](https://img.shields.io/badge/license-MIT-green) [![GitHub](https://img.shields.io/badge/GitHub-nulljosh%2Ffengshui-black?logo=github)](https://github.com/nulljosh/fengshui)
 
+**Live:** https://fengshui.heyitsmejosh.com
+
 Assess the place you live against the four energy layers of fengshui, then read the reasoning. Condensed from *Good Fengshui* by Eva Wong.
 
 ## What it does

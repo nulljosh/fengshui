@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feng Shui — Joshua Trommel</title>
-<meta name="description" content="A pocket guide to feng shui principles, condensed from Good Fengshui by Eva Wong. Reads offline, no account.">
-<meta property="og:title" content="Feng Shui — a pocket guide to the principles">
-<meta property="og:description" content="A pocket guide to feng shui principles, condensed from Good Fengshui by Eva Wong. Reads offline, no account.">
+<meta name="description" content="Assess your home against the four energy layers of feng shui — land, neighborhood, building, objects. Condensed from Good Fengshui by Eva Wong. No account.">
+<meta property="og:title" content="Feng Shui — assess the place you live">
+<meta property="og:description" content="Walk your home through the four energy layers and get back what the book says is working against you. Condensed from Good Fengshui by Eva Wong.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fengshui.heyitsmejosh.com">
 <link rel="preload" href="fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -61,12 +61,12 @@ body {
   background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-sm);
   color:var(--text2); font-family:var(--font-body); font-size:0.875rem; appearance:none; cursor:pointer;
 }
-@media(max-width:860px) { .chapter-jump { display:block; } }
+@media(max-width:860px) { body[data-view="read"] .chapter-jump { display:block; } }
 
 .main { grid-column:2; grid-row:2; min-width:0; }
 @media(max-width:860px) { .main { grid-column:1; } }
 
-.hero { margin-bottom:3rem; padding-bottom:2rem; border-bottom:1px solid var(--border2); }
+.hero { margin-bottom:2rem; padding-bottom:2rem; border-bottom:1px solid var(--border2); }
 h1.title {
   font-family:var(--font-display); font-size:clamp(2rem,5vw,2.75rem); font-weight:900;
   letter-spacing:-0.02em; line-height:1.1; color:var(--text); margin-bottom:0.75rem;
@@ -75,6 +75,70 @@ h1.title {
 .hero-meta { font-size:0.8125rem; color:var(--text3); display:flex; gap:1rem; flex-wrap:wrap; }
 .hero-meta span::before { content:'· '; }
 .hero-meta span:first-child::before { content:''; }
+
+/* tabs */
+.tabs { display:flex; gap:0.375rem; margin-bottom:2.5rem; }
+.tabs button {
+  font-family:var(--font-body); font-size:0.8125rem; font-weight:500;
+  padding:0.4rem 0.9rem; border-radius:var(--radius-pill); cursor:pointer;
+  background:transparent; border:1px solid var(--border2); color:var(--text3);
+  transition:color 0.15s, border-color 0.15s, background 0.15s;
+}
+.tabs button:hover { color:var(--text2); }
+.tabs button[aria-selected="true"] { color:var(--bg); background:var(--accent); border-color:var(--accent); }
+
+body[data-view="assess"] #read-view { display:none; }
+body[data-view="assess"] .toc-wrap { visibility:hidden; }
+body[data-view="read"] #assess-view { display:none; }
+
+/* assessment */
+.summary { border:1px solid var(--border2); border-radius:var(--radius-md); padding:1.25rem 1.25rem 1rem; margin-bottom:2.5rem; }
+.summary-head { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; margin-bottom:1rem; }
+.summary-head h2 { font-family:var(--font-display); font-size:1rem; font-weight:600; color:var(--text); }
+.summary-head button {
+  font-family:var(--font-body); font-size:0.75rem; color:var(--text3);
+  background:none; border:none; cursor:pointer; text-decoration:underline; padding:0;
+}
+.summary-head button:hover { color:var(--text2); }
+.tally { display:flex; flex-direction:column; gap:0.5rem; }
+.tally-row { display:flex; align-items:center; gap:0.75rem; font-size:0.8125rem; }
+.tally-row .name { color:var(--text2); flex:0 0 9.5rem; }
+.tally-row .bar { flex:1; height:4px; background:var(--border); border-radius:2px; overflow:hidden; min-width:2rem; }
+.tally-row .bar i { display:block; height:100%; background:var(--accent); }
+.tally-row .n { color:var(--text3); flex:0 0 auto; font-variant-numeric:tabular-nums; }
+.summary-note { font-size:0.8125rem; color:var(--text3); margin-top:1rem; padding-top:0.875rem; border-top:1px solid var(--border); }
+
+.layer { margin-bottom:3rem; }
+.layer > h2 {
+  font-family:var(--font-display); font-size:1.25rem; color:var(--text); line-height:1.25;
+  padding-left:0.875rem; border-left:3px solid var(--accent); margin-left:-0.875rem; margin-bottom:0.4rem;
+}
+.layer > p.layer-sub { font-size:0.8125rem; color:var(--text3); margin-bottom:1.5rem; }
+
+.q { padding:1rem 0; border-bottom:1px solid var(--border); }
+.q:last-child { border-bottom:none; }
+.q p { font-size:0.9375rem; color:var(--text2); margin-bottom:0.75rem; }
+.q.flagged p { color:var(--text); }
+.opts { display:flex; gap:0.375rem; flex-wrap:wrap; }
+.opts button {
+  font-family:var(--font-body); font-size:0.8125rem; padding:0.3rem 0.85rem;
+  background:var(--bg2); border:1px solid var(--border2); border-radius:var(--radius-pill);
+  color:var(--text3); cursor:pointer; transition:color 0.15s, border-color 0.15s;
+}
+.opts button:hover { color:var(--text2); border-color:var(--text3); }
+.opts button[aria-pressed="true"] { color:var(--text); border-color:var(--accent); font-weight:500; }
+.q-note {
+  font-size:0.8125rem; color:var(--text3); margin-top:0.75rem;
+  padding-left:0.875rem; border-left:2px solid var(--border2);
+}
+.q-note a { color:var(--text2); }
+
+.findings { margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border2); }
+.findings h2 { font-family:var(--font-display); font-size:1.25rem; color:var(--text); margin-bottom:1rem; }
+.findings ol { padding-left:1.2rem; }
+.findings li { margin-bottom:1rem; font-size:0.875rem; color:var(--text2); }
+.findings li .fq { color:var(--text); font-weight:500; display:block; }
+.findings li .siting { font-size:0.75rem; color:var(--text3); }
 
 #content { font-size:0.9375rem; color:var(--text2); }
 #content h1, #content h2 { font-family:var(--font-display); color:var(--text); line-height:1.25; margin-top:2.5rem; margin-bottom:0.75rem; }
@@ -93,11 +157,11 @@ footer a { font-size:0.8125rem; color:var(--text3); text-decoration:none; }
 footer a:hover { color:var(--accent); }
 </style>
 </head>
-<body>
+<body data-view="assess">
 
 <div class="page">
   <select class="chapter-jump" id="chapter-jump" aria-label="Jump to chapter">
-    <option value="">Jump to chapter…</option>
+    <option value="">Jump to chapter&hellip;</option>
   </select>
 
   <aside class="toc-wrap">
@@ -109,10 +173,35 @@ footer a:hover { color:var(--accent); }
   <main class="main">
     <div class="hero">
       <h1 class="title">Feng Shui</h1>
-      <p class="hero-sub">A pocket guide to the principles, condensed from <em>Good Fengshui</em> by Eva Wong. Reads offline, no account.</p>
+      <p class="hero-sub">Assess the place you live against the four energy layers, then read the reasoning. Condensed from <em>Good Fengshui</em> by Eva Wong. No account.</p>
       <div class="hero-meta" id="hero-meta"></div>
     </div>
-    <div id="content"><div class="empty-state">Loading&hellip;</div></div>
+
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-assess" aria-selected="true" aria-controls="assess-view">Assess</button>
+      <button role="tab" id="tab-read" aria-selected="false" aria-controls="read-view">Read</button>
+    </div>
+
+    <section id="assess-view" role="tabpanel" aria-labelledby="tab-assess">
+      <div class="summary">
+        <div class="summary-head">
+          <h2 id="summary-title">Nothing answered yet</h2>
+          <button type="button" id="reset">Start over</button>
+        </div>
+        <div class="tally" id="tally"></div>
+        <p class="summary-note">The book works outside in. Land and neighbourhood problems cannot be remedied by anything you do indoors, so they are siting decisions, not fixes.</p>
+      </div>
+      <div id="layers"></div>
+      <div class="findings" id="findings" hidden>
+        <h2>What to do about it</h2>
+        <ol id="findings-list"></ol>
+      </div>
+    </section>
+
+    <section id="read-view" role="tabpanel" aria-labelledby="tab-read">
+      <div id="content"><div class="empty-state">Loading&hellip;</div></div>
+    </section>
+
     <footer>
       <a href="https://heyitsmejosh.com">heyitsmejosh.com</a>
     </footer>
@@ -125,6 +214,289 @@ footer a:hover { color:var(--accent); }
   var saved = localStorage.getItem('theme');
   if (saved) document.documentElement.setAttribute('data-theme', saved);
 })();
+
+/* ---------- assessment data: every note traces to content.md ---------- */
+
+var LAYERS = [
+  { id:'land',         name:'Land energy',        sub:'Chapter 8. The strongest influence, and the one you cannot change.' },
+  { id:'neighborhood', name:'Neighbourhood',      sub:'Chapter 9. People energy. Not fixable from inside the home.' },
+  { id:'building',     name:'Building',           sub:'Chapter 10. Architectural energy — shape, materials, flow, light.' },
+  { id:'objects',      name:'Objects',            sub:'Chapter 11. What is near you and what you keep around you.' }
+];
+
+var SITING = { land:true, neighborhood:true, building:false, objects:false };
+
+var QUESTIONS = [
+  { layer:'land', bad:'no', ch:'Chapter 8: Land Energy',
+    q:'Are the nearest hills and mountains gentle and rolling, rather than jagged, rocky, or knife-edged?',
+    note:'Jagged, rocky, sharp formations carry aggressive, destructive energy; gentle rolling hills carry nourishing energy. The impact is worst when you are surrounded by them, less when they are only visible at a distance.' },
+  { layer:'land', bad:'no', ch:'Chapter 8: Land Energy',
+    q:'If you are in a valley, is it wide with gentle slopes rather than narrow and steep?',
+    note:'Wide valleys with gentle slopes carry nourishing energy. Narrow valleys with steep slopes carry fast, restless energy, and gullies carry unstable, precarious energy.' },
+  { layer:'land', bad:'no', ch:'Chapter 8: Land Energy',
+    q:'Is the nearest water gentle and clear — a meandering river, a calm lake — rather than fast, stagnant, or stormy?',
+    note:'Gentle clear water nourishes. Fast water carries restless energy, stagnant water (swamps, brackish channels) carries lethargy, and stormy water carries aggressive energy.' },
+  { layer:'land', bad:'yes', ch:'Chapter 8: Land Energy',
+    q:'Is there a reservoir, dam, or large human-made water channel close by?',
+    note:'Reservoirs carry pent-up energy, and releasing water through a dam adds to the severity of the discontinuity. Well-maintained canals are the exception — they carry uplifting energy.' },
+  { layer:'land', bad:'yes', ch:'Chapter 8: Land Energy',
+    q:'Is there a cliff edge, shoreline, or steep drop within about 300 feet?',
+    note:'Avoid living at the edge of a cliff or at the bottom of one. About 300 feet (100 metres) from a discontinuity in the land is usually enough distance.' },
+  { layer:'land', bad:'no', ch:'Chapter 8: Land Energy',
+    q:'Is the vegetation around you healthy — full trees, diverse grasses — and do you see wildlife?',
+    note:'Animals are drawn to positive energy and repelled by negative energy, and healthy plant life indicates positive land energy. Unhealthy foliage signals unfavourable conditions even in a developed area.' },
+
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Do people actually gather in the public spaces — parks, squares, markets?',
+    note:'Visible signs of life and community engagement are a listed indicator of positive neighbourhood energy. Some neighbourhoods encourage interaction; others produce isolation.' },
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Does traffic flow smoothly here, rather than piling into congestion?',
+    note:'Street patterns should encourage safe, pleasant pedestrian movement. Congestion is one of the factors that sets the overall energy of a neighbourhood.' },
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Are the buildings and streets in good condition and visibly maintained?',
+    note:'Condition of buildings and streets is one of the seven questions the book puts to a neighbourhood. Active, well-maintained community space is a positive indicator.' },
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Is there a balanced mix of residential and commercial use, rather than one use dominating?',
+    note:'A balanced mix of residential and commercial uses is listed as an indicator of positive neighbourhood energy.' },
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Do the surrounding buildings share a coherent architectural character?',
+    note:'Coherent, harmonious architectural character is a positive indicator. Land use, architectural style, street pattern and community space together produce the neighbourhood energy.' },
+  { layer:'neighborhood', bad:'no', ch:'Assessing Your Neighborhood',
+    q:'Do you feel good walking through the neighbourhood?',
+    note:'How you feel walking through a neighbourhood is one of the book’s direct assessment questions. A beautifully designed home cannot overcome fundamentally poor neighbourhood energy.' },
+
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Is your first impression of the building a good one?',
+    note:'First impression is the first test the book applies to architectural energy. Negative architectural energy creates stress, confusion, and discomfort over time.' },
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Do the building’s elements feel balanced and in proportion, and in scale with what surrounds it?',
+    note:'Poor structural proportion and being out of scale with the surroundings are both listed as architectural problems to recognise.' },
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Are the materials natural, well maintained, and pleasing?',
+    note:'Deteriorating materials and poor maintenance are listed building problems. Material quality is one of the six checks in the book’s evaluation.' },
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Does the floor plan circulate well, without dead zones or rooms nobody enters?',
+    note:'Floor plans that create dead zones or poor circulation are a named architectural problem. Interior flow should facilitate circulation and connection.' },
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Does the home get enough natural light and ventilation?',
+    note:'Light and air is one of the six architectural checks. Fengshui means "wind and water" — gentle wind and clear water make an environment healthy.' },
+  { layer:'building', bad:'no', ch:'The Fengshui of Building Structure',
+    q:'Does the building connect to neighbourhood life rather than isolating you from it?',
+    note:'Buildings that isolate you from community and neighbourhood life are a listed problem. A building should relate well to its neighbourhood.' },
+
+  { layer:'objects', bad:'yes', ch:'External Object Energy',
+    q:'Are there electrical transmission lines directly overhead?',
+    note:'Transmission lines directly overhead are a named sign of negative object energy. Relocation is the best answer; countermeasures only minimise the effect, they do not remove it.' },
+  { layer:'objects', bad:'yes', ch:'External Object Energy',
+    q:'Is there a cell tower, radio antenna, or substation nearby?',
+    note:'Proximity to large utility structures is the primary source of negative object energy. Distance matters — ask how far away it is, not only whether it exists.' },
+  { layer:'objects', bad:'yes', ch:'External Object Energy',
+    q:'Are there industrial structures, or harsh angular structures, dominating the view?',
+    note:'Industrial structures and harsh angular forms that dominate the view are listed indicators of problematic object energy.' },
+  { layer:'objects', bad:'no', ch:'External Object Energy',
+    q:'Is the view from your main windows clear rather than obstructed?',
+    note:'Whether the view is clear or obstructed is one of the five questions the book puts to object energy.' },
+  { layer:'objects', bad:'no', ch:'External Object Energy',
+    q:'Are there plants, trees, or natural elements in the immediate surroundings?',
+    note:'Presence of plants and natural elements is part of assessing object energy, and strategic landscaping is one of the listed countermeasures.' },
+  { layer:'objects', bad:'no', ch:'External Object Energy',
+    q:'Are your interior spaces organised rather than cluttered?',
+    note:'Clutter versus organised space is listed under interior object energy, alongside furniture arrangement, natural versus synthetic materials, and colour.' }
+];
+
+/* ---------- state ---------- */
+
+var STORE_KEY = 'fengshui.assessment';
+var answers = load();
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
+  catch (e) { return {}; }
+}
+function save() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(answers)); } catch (e) {}
+}
+
+// counts only answers that match the question's concerning value; 'unsure' never counts
+function tally(a) {
+  var out = {};
+  LAYERS.forEach(function(l) { out[l.id] = { concerns:0, answered:0, total:0 }; });
+  QUESTIONS.forEach(function(q, i) {
+    var t = out[q.layer];
+    t.total++;
+    if (!a[i]) return;
+    t.answered++;
+    if (a[i] === q.bad) t.concerns++;
+  });
+  return out;
+}
+
+function concerns(a) {
+  return QUESTIONS.map(function(q, i) { return { q:q, i:i }; })
+                  .filter(function(x) { return a[x.i] === x.q.bad; });
+}
+
+/* ---------- render ---------- */
+
+var layersEl = document.getElementById('layers');
+var tallyEl = document.getElementById('tally');
+var titleEl = document.getElementById('summary-title');
+var findingsEl = document.getElementById('findings');
+var findingsList = document.getElementById('findings-list');
+
+function buildLayers() {
+  LAYERS.forEach(function(layer) {
+    var sec = document.createElement('section');
+    sec.className = 'layer';
+    var h = document.createElement('h2');
+    h.textContent = layer.name;
+    var sub = document.createElement('p');
+    sub.className = 'layer-sub';
+    sub.textContent = layer.sub;
+    sec.appendChild(h);
+    sec.appendChild(sub);
+
+    QUESTIONS.forEach(function(q, i) {
+      if (q.layer !== layer.id) return;
+      var row = document.createElement('div');
+      row.className = 'q';
+      row.id = 'q-' + i;
+      var p = document.createElement('p');
+      p.textContent = q.q;
+      row.appendChild(p);
+      var opts = document.createElement('div');
+      opts.className = 'opts';
+      ['yes','no','unsure'].forEach(function(v) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = v;
+        b.dataset.q = i;
+        b.dataset.v = v;
+        opts.appendChild(b);
+      });
+      row.appendChild(opts);
+      var note = document.createElement('div');
+      note.className = 'q-note';
+      note.hidden = true;
+      row.appendChild(note);
+      sec.appendChild(row);
+    });
+    layersEl.appendChild(sec);
+  });
+
+  layersEl.addEventListener('click', function(e) {
+    var b = e.target.closest('button[data-q]');
+    if (!b) return;
+    var i = b.dataset.q;
+    answers[i] = answers[i] === b.dataset.v ? undefined : b.dataset.v;
+    if (!answers[i]) delete answers[i];
+    save();
+    render();
+  });
+}
+
+function render() {
+  var t = tally(answers);
+  var flagged = concerns(answers);
+  var answered = Object.keys(answers).length;
+
+  titleEl.textContent = answered === 0
+    ? 'Nothing answered yet'
+    : flagged.length + (flagged.length === 1 ? ' concern' : ' concerns') +
+      ' across ' + answered + ' of ' + QUESTIONS.length + ' questions';
+
+  tallyEl.textContent = '';
+  LAYERS.forEach(function(l) {
+    var s = t[l.id];
+    var row = document.createElement('div');
+    row.className = 'tally-row';
+    var name = document.createElement('span');
+    name.className = 'name';
+    name.textContent = l.name;
+    var bar = document.createElement('span');
+    bar.className = 'bar';
+    var fill = document.createElement('i');
+    fill.style.width = (s.concerns / s.total * 100) + '%';
+    bar.appendChild(fill);
+    var n = document.createElement('span');
+    n.className = 'n';
+    n.textContent = s.answered === 0 ? '—' : s.concerns + ' of ' + s.answered;
+    row.appendChild(name); row.appendChild(bar); row.appendChild(n);
+    tallyEl.appendChild(row);
+  });
+
+  QUESTIONS.forEach(function(q, i) {
+    var row = document.getElementById('q-' + i);
+    var val = answers[i];
+    row.querySelectorAll('button[data-q]').forEach(function(b) {
+      b.setAttribute('aria-pressed', b.dataset.v === val ? 'true' : 'false');
+    });
+    var bad = val === q.bad;
+    row.classList.toggle('flagged', bad);
+    var note = row.querySelector('.q-note');
+    note.hidden = !bad;
+    if (bad) note.textContent = q.note;
+  });
+
+  findingsEl.hidden = flagged.length === 0;
+  findingsList.textContent = '';
+  flagged.sort(function(a, b) { return (SITING[b.q.layer] ? 1 : 0) - (SITING[a.q.layer] ? 1 : 0); });
+  flagged.forEach(function(x) {
+    var li = document.createElement('li');
+    var q = document.createElement('span');
+    q.className = 'fq';
+    q.textContent = x.q.q;
+    li.appendChild(q);
+    li.appendChild(document.createTextNode(x.q.note + ' '));
+    var link = document.createElement('a');
+    link.href = '#';
+    link.textContent = 'Read ' + x.q.ch;
+    link.addEventListener('click', function(e) { e.preventDefault(); openChapter(x.q.ch); });
+    li.appendChild(link);
+    if (SITING[x.q.layer]) {
+      var s = document.createElement('div');
+      s.className = 'siting';
+      s.textContent = 'Siting decision — no interior change fixes this.';
+      li.appendChild(s);
+    }
+    findingsList.appendChild(li);
+  });
+}
+
+document.getElementById('reset').addEventListener('click', function() {
+  answers = {};
+  save();
+  render();
+});
+
+/* ---------- tabs ---------- */
+
+var tabAssess = document.getElementById('tab-assess');
+var tabRead = document.getElementById('tab-read');
+
+function setView(v) {
+  document.body.dataset.view = v;
+  tabAssess.setAttribute('aria-selected', v === 'assess' ? 'true' : 'false');
+  tabRead.setAttribute('aria-selected', v === 'read' ? 'true' : 'false');
+}
+tabAssess.addEventListener('click', function() { setView('assess'); });
+tabRead.addEventListener('click', function() { setView('read'); });
+
+// matches on heading text, so it survives content.md edits that renumber the ids
+function openChapter(text) {
+  setView('read');
+  var target = null;
+  contentEl.querySelectorAll('h2').forEach(function(h) {
+    if (!target && h.textContent.trim() === text) target = h;
+  });
+  // the read view is display:none until setView, so let layout settle before scrolling
+  requestAnimationFrame(function() {
+    if (target) target.scrollIntoView({ behavior:'smooth' });
+    else window.scrollTo({ top:0, behavior:'smooth' });
+  });
+}
+
+/* ---------- reader ---------- */
 
 var contentEl = document.getElementById('content');
 var metaEl = document.getElementById('hero-meta');
@@ -165,6 +537,9 @@ function buildTOC() {
   headings.forEach(function(h) { observer.observe(h); });
 }
 
+buildLayers();
+render();
+
 fetch('content.md')
   .then(function(res) { return res.text(); })
   .then(function(md) {
@@ -172,6 +547,7 @@ fetch('content.md')
     var h2s = contentEl.querySelectorAll('h2');
     var words = md.trim().split(/\s+/).length;
     var mins = Math.max(1, Math.round(words / 200));
+    var s0 = document.createElement('span'); s0.textContent = QUESTIONS.length + ' checks'; metaEl.appendChild(s0);
     var s1 = document.createElement('span'); s1.textContent = h2s.length + ' chapters'; metaEl.appendChild(s1);
     var s2 = document.createElement('span'); s2.textContent = mins + ' min read'; metaEl.appendChild(s2);
     buildTOC();
@@ -179,6 +555,52 @@ fetch('content.md')
   .catch(function() {
     contentEl.innerHTML = '<div class="empty-state">Content failed to load.</div>';
   });
+
+/* ---------- self-check: /?selftest ---------- */
+// ponytail: assert block, real test file if the scoring grows past counting
+if (location.search.indexOf('selftest') !== -1) {
+  (function() {
+    var fails = 0;
+    function ok(cond, msg) { if (!cond) { fails++; console.error('FAIL: ' + msg); } else { console.log('ok: ' + msg); } }
+
+    var first = QUESTIONS.findIndex(function(q) { return q.layer === 'land'; });
+    var good = QUESTIONS[first].bad === 'yes' ? 'no' : 'yes';
+
+    ok(concerns({}).length === 0, 'no answers means no concerns');
+    ok(tally({})['land'].answered === 0, 'no answers means nothing answered');
+
+    var f = {}; f[first] = QUESTIONS[first].bad;
+    ok(tally(f)['land'].concerns === 1, 'a bad answer counts as one concern');
+    ok(concerns(f).length === 1, 'a bad answer appears in findings');
+
+    var g = {}; g[first] = good;
+    ok(tally(g)['land'].concerns === 0, 'the safe answer is not a concern');
+    ok(tally(g)['land'].answered === 1, 'the safe answer still counts as answered');
+
+    var u = {}; u[first] = 'unsure';
+    ok(tally(u)['land'].concerns === 0, 'unsure is never a concern');
+    ok(tally(u)['land'].answered === 1, 'unsure still counts as answered');
+
+    var all = {};
+    QUESTIONS.forEach(function(q, i) { all[i] = q.bad; });
+    ok(concerns(all).length === QUESTIONS.length, 'every bad answer flags');
+    LAYERS.forEach(function(l) {
+      var t = tally(all)[l.id];
+      ok(t.concerns === t.total, l.id + ' tallies all of its own questions');
+    });
+
+    var totals = LAYERS.reduce(function(n, l) { return n + tally(all)[l.id].total; }, 0);
+    ok(totals === QUESTIONS.length, 'every question belongs to a known layer');
+
+    var before = answers;
+    answers = all; save();
+    var restored = load();
+    ok(JSON.stringify(tally(restored)) === JSON.stringify(tally(all)), 'localStorage round-trip is identical');
+    answers = before; save(); render();
+
+    console.log(fails === 0 ? 'selftest: all passed' : 'selftest: ' + fails + ' failed');
+  })();
+}
 </script>
 
 </body>

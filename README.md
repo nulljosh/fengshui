@@ -6,11 +6,11 @@
 
 **Live:** https://fengshui.heyitsmejosh.com
 
-Assess the place you live against the four energy layers of fengshui, then read the reasoning. Condensed from *Good Fengshui* by Eva Wong.
+Is the place you live any good? Answer 24 questions and find out, with the book's own reasoning behind every answer. Condensed from *Good Fengshui* by Eva Wong.
 
 ## What it does
 
-The book is Form School, and its chapters are already checklists. The **Assess** tab turns them into 24 questions across the four layers the book works through, outside in:
+The book is Form School. Its chapters are already checklists. The **Assess** tab turns them into 24 questions across the four layers the book works through, from the outside in:
 
 | Layer | Chapter | What it covers |
 |---|---|---|
@@ -19,21 +19,21 @@ The book is Form School, and its chapters are already checklists. The **Assess**
 | Building | 10 | Proportion, materials, floor plan, light and air, connection |
 | Objects | 11 | Transmission lines, towers, industrial structures, view, clutter |
 
-Answer yes / no / unsure. Each concerning answer surfaces the book's own reasoning and a link into the chapter it came from. Land and neighbourhood concerns sort first and are marked as siting decisions, because the book is explicit that nothing done indoors remedies them.
+Yes, no, or unsure. Every worrying answer shows the book's reasoning and links into the chapter it came from. Land and neighbourhood come first and are marked as siting decisions. The book is blunt about it: nothing you do indoors fixes them.
 
-Answers save to `localStorage`. No account, no backend, no build step.
+Answers stay in `localStorage`. No account. No backend. No build step.
 
 ## Files
 
-- `index.html` — the whole app: assessment, reader, and the question set
-- `content.md` — chapter source, shared by web and iOS
-- `tokens.css` — shared design tokens
+- `index.html`: the whole app. Assessment, reader, questions
+- `content.md`: the chapter text, shared by web and iOS
+- `tokens.css`: the house design tokens
 
 Self-check: open `index.html?selftest` and read the console.
 
 ## iOS App
 
-`ios/FengShui` is a native SwiftUI reader. It is parked and does not yet have the assessment — see `roadmap.md`.
+`ios/FengShui` is a native SwiftUI reader. It's parked, and it doesn't have the assessment yet. See `roadmap.md`.
 
 ## Roadmap
 

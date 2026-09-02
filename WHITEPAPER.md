@@ -2,8 +2,9 @@
 
 **v1.0** | August 2026
 
-Feng Shui is a pocket reader for the principles in Eva Wong's *Good Fengshui*,
-condensed into chapters that work offline. Web plus a native SwiftUI iOS app.
+Is the place you live any good? Eva Wong's *Good Fengshui*, condensed into a
+reader and a 24-question assessment that work offline. Web plus a native SwiftUI
+iOS app.
 
 ## Problem
 
@@ -33,7 +34,7 @@ no failure mode beyond the app itself.
 
 ## Design decisions
 
-- **One content file, two renderers.** The alternative — per-platform content — is
+- **One content file, two renderers.** The alternative, per-platform content, is
   the failure mode where the app and the site drift apart.
 - **Ship the text, not a fetch.** Bundling the content removes the network from the
   read path entirely.

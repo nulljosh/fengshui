@@ -5,7 +5,7 @@ struct HomeqiApp: App {
     var body: some Scene {
         WindowGroup {
             ChapterListView()
-            .shareApp("https://fengshui.heyitsmejosh.com")
+            .shareApp("https://homeqi.heyitsmejosh.com")
         }
     }
 }

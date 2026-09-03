@@ -4,7 +4,7 @@
 
 ![license](https://img.shields.io/badge/license-MIT-green) [![GitHub](https://img.shields.io/badge/GitHub-nulljosh%2Fhomeqi-black?logo=github)](https://github.com/nulljosh/homeqi)
 
-**Live:** https://fengshui.heyitsmejosh.com
+**Live:** https://homeqi.heyitsmejosh.com
 
 Is the place you live any good? Answer 24 questions and find out, with the book's own reasoning behind every answer. Condensed from *Good Fengshui* by Eva Wong.
 

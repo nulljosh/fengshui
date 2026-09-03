@@ -1,5 +1,10 @@
 # Roadmap
 
+- [ ] Verify iPad split-view (ChapterListView) visually on simulator -- 2026-09-02. Pushed
+  the NavigationSplitView conversion without a simulator screenshot; this machine's Xcode
+  only has the iOS 26.5 SDK but the iOS 26.2 runtime downloaded, so `xcodebuild` won't
+  recognize any simulator destination even by explicit UDID. Needs the matching platform
+  component installed, then a quick visual check.
 - [ ] iOS is built and parked, not shipping yet -- 2026-08-30. A new bundle ID for a
   single-book reader is the exact shape Apple rejected seven times in the open
   4.3(a) wave, and the 5.6 suspension only lifted 2026-08-18. Revisit

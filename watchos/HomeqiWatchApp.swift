@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct FengShuiWatchApp: App {
+struct HomeqiWatchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

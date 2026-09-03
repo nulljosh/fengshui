@@ -7,169 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		343FAC2EC10CD0E036053C7D /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF3567E0B56F2114FD1E5 /* ContentStore.swift */; };
-		3D91975FD7E9356B942921E8 /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */; };
-		47B9EACC3BCCE92CDCC3E44E /* FengShuiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */; };
-		5FB4BB06404661D6FAE539C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E0E2C17CA51F366C76A68C /* Assets.xcassets */; };
-		8EE860347AA5B5E18F8D6376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57B6F49D86EE09F8EB0670 /* ContentView.swift */; };
-		B7D5F3A2981D5D4E107AA5B4 /* content.md in Resources */ = {isa = PBXBuildFile; fileRef = 64C2259E881A68D7288591EE /* content.md */; };
-		BA216CF46996C9CFFA57ADC9 /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */; };
+		10F234A6AEC951543E0E19AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA8C21CF41CD3D3E08173 /* Assets.xcassets */; };
+		18716402E9C768A1CDDE1F17 /* HomeqiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0A2376BD1F0EFD3CAEE28 /* HomeqiWatchApp.swift */; };
+		42FB51A75E8DE31E1661EF79 /* content.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F8634C7A47B9B476D15D446 /* content.md */; };
+		71F5259A9A0F2E87B165A8A7 /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB0784C8C9F43D1FEA3BA9 /* ContentStore.swift */; };
+		9D5FCE86CDC602C266CF947F /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D527D77124ADC300370626 /* ChapterListView.swift */; };
+		BA3A0E1D6FF7A23D1B6B8A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75615F85357FAF009AF3CC12 /* ContentView.swift */; };
+		C5451C4855A441C3A40052B4 /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABF492C60EC97DBE5F41AB /* ChapterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FengShuiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
-		64C2259E881A68D7288591EE /* content.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = content.md; sourceTree = "<group>"; };
-		6C57B6F49D86EE09F8EB0670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
-		978DF3567E0B56F2114FD1E5 /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
-		B2E0E2C17CA51F366C76A68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengShuiWatchApp.swift; sourceTree = "<group>"; };
+		3F8634C7A47B9B476D15D446 /* content.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = content.md; sourceTree = "<group>"; };
+		75615F85357FAF009AF3CC12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85BB0784C8C9F43D1FEA3BA9 /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		90CEA8C21CF41CD3D3E08173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A0A2376BD1F0EFD3CAEE28 /* HomeqiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeqiWatchApp.swift; sourceTree = "<group>"; };
+		B3D527D77124ADC300370626 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		B4F451CAB3E66B4E9818990D /* HomeqiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeqiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFABF492C60EC97DBE5F41AB /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		085411EF773C1684B4531CD8 /* Models */ = {
+		0B5912BABF0E5C785CD0E423 = {
 			isa = PBXGroup;
 			children = (
-				978DF3567E0B56F2114FD1E5 /* ContentStore.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3CABF53FAE6EDEEDC936E170 = {
-			isa = PBXGroup;
-			children = (
-				085411EF773C1684B4531CD8 /* Models */,
-				9727E45E3FC93793086A73A6 /* Resources */,
-				62351310E85444BB6C6FBF50 /* Views */,
-				F5C874A13CED1282615C49D1 /* watchos */,
-				6C4AC06FB761F7B1D2720748 /* Products */,
+				3FCF7AC9E17EB51AA795C36C /* Models */,
+				46A38B8A36F70B1309BD9352 /* Resources */,
+				7A7F224ED461A04DA934BE9E /* Views */,
+				79F1AED95C69A02F32176EFD /* watchos */,
+				2A927A0E574B83A4E1FE117F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		62351310E85444BB6C6FBF50 /* Views */ = {
+		2A927A0E574B83A4E1FE117F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */,
-				8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6C4AC06FB761F7B1D2720748 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */,
+				B4F451CAB3E66B4E9818990D /* HomeqiWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9727E45E3FC93793086A73A6 /* Resources */ = {
+		3FCF7AC9E17EB51AA795C36C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				64C2259E881A68D7288591EE /* content.md */,
+				85BB0784C8C9F43D1FEA3BA9 /* ContentStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46A38B8A36F70B1309BD9352 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F8634C7A47B9B476D15D446 /* content.md */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F5C874A13CED1282615C49D1 /* watchos */ = {
+		79F1AED95C69A02F32176EFD /* watchos */ = {
 			isa = PBXGroup;
 			children = (
-				B2E0E2C17CA51F366C76A68C /* Assets.xcassets */,
-				6C57B6F49D86EE09F8EB0670 /* ContentView.swift */,
-				C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */,
-				085411EF773C1684B4531CD8 /* Models */,
-				9727E45E3FC93793086A73A6 /* Resources */,
-				62351310E85444BB6C6FBF50 /* Views */,
+				90CEA8C21CF41CD3D3E08173 /* Assets.xcassets */,
+				75615F85357FAF009AF3CC12 /* ContentView.swift */,
+				92A0A2376BD1F0EFD3CAEE28 /* HomeqiWatchApp.swift */,
+				3FCF7AC9E17EB51AA795C36C /* Models */,
+				46A38B8A36F70B1309BD9352 /* Resources */,
+				7A7F224ED461A04DA934BE9E /* Views */,
 			);
 			name = watchos;
 			path = .;
 			sourceTree = "<group>";
 		};
+		7A7F224ED461A04DA934BE9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFABF492C60EC97DBE5F41AB /* ChapterDetailView.swift */,
+				B3D527D77124ADC300370626 /* ChapterListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8193D009658B6D812C98227 /* FengShuiWatch */ = {
+		18A5BEE35D73A390C77C9DA8 /* HomeqiWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45B9F96FDE63FF83FC677EB9 /* Build configuration list for PBXNativeTarget "FengShuiWatch" */;
+			buildConfigurationList = 4DC28DBB6F6C6531380F7482 /* Build configuration list for PBXNativeTarget "HomeqiWatch" */;
 			buildPhases = (
-				99FFCEB413C6388DA23867D5 /* Sources */,
-				654B9A8C4C5546479B1D18CD /* Resources */,
+				031DA8160D305BA17D383E8B /* Sources */,
+				CFF02A40C7A598AA10E4B5B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FengShuiWatch;
+			name = HomeqiWatch;
 			packageProductDependencies = (
 			);
-			productName = FengShuiWatch;
-			productReference = 28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */;
+			productName = HomeqiWatch;
+			productReference = B4F451CAB3E66B4E9818990D /* HomeqiWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA4D0BB0D34E54E2632F82BC /* Project object */ = {
+		440864CF23AC14E04EFC0411 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					B8193D009658B6D812C98227 = {
+					18A5BEE35D73A390C77C9DA8 = {
 						DevelopmentTeam = QMM486NPYC;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 709B2F03CF116635171171BA /* Build configuration list for PBXProject "FengShuiWatch" */;
+			buildConfigurationList = 1A5F7D7B2A266CA9AE42FB06 /* Build configuration list for PBXProject "HomeqiWatch" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 3CABF53FAE6EDEEDC936E170;
+			mainGroup = 0B5912BABF0E5C785CD0E423;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6C4AC06FB761F7B1D2720748 /* Products */;
+			productRefGroup = 2A927A0E574B83A4E1FE117F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8193D009658B6D812C98227 /* FengShuiWatch */,
+				18A5BEE35D73A390C77C9DA8 /* HomeqiWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		654B9A8C4C5546479B1D18CD /* Resources */ = {
+		CFF02A40C7A598AA10E4B5B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB4BB06404661D6FAE539C1 /* Assets.xcassets in Resources */,
-				B7D5F3A2981D5D4E107AA5B4 /* content.md in Resources */,
+				10F234A6AEC951543E0E19AC /* Assets.xcassets in Resources */,
+				42FB51A75E8DE31E1661EF79 /* content.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99FFCEB413C6388DA23867D5 /* Sources */ = {
+		031DA8160D305BA17D383E8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA216CF46996C9CFFA57ADC9 /* ChapterDetailView.swift in Sources */,
-				3D91975FD7E9356B942921E8 /* ChapterListView.swift in Sources */,
-				343FAC2EC10CD0E036053C7D /* ContentStore.swift in Sources */,
-				8EE860347AA5B5E18F8D6376 /* ContentView.swift in Sources */,
-				47B9EACC3BCCE92CDCC3E44E /* FengShuiWatchApp.swift in Sources */,
+				C5451C4855A441C3A40052B4 /* ChapterDetailView.swift in Sources */,
+				9D5FCE86CDC602C266CF947F /* ChapterListView.swift in Sources */,
+				71F5259A9A0F2E87B165A8A7 /* ContentStore.swift in Sources */,
+				BA3A0E1D6FF7A23D1B6B8A12 /* ContentView.swift in Sources */,
+				18716402E9C768A1CDDE1F17 /* HomeqiWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1C73AA0CAE5C9C50A704867E /* Debug */ = {
+		1C27DCF022B15D1FE0DAD906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,22 +236,7 @@
 			};
 			name = Debug;
 		};
-		8A6F900B15F60F63003D1B6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.heyitsmejosh.fengshui.watchos;
-				PRODUCT_NAME = FengShui;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-			};
-			name = Release;
-		};
-		9ABFF5D9D05813E07A8010F1 /* Release */ = {
+		7DE97996096FB62DE119DDC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -311,7 +296,7 @@
 			};
 			name = Release;
 		};
-		B43355D044C0D5EC9875D767 /* Debug */ = {
+		902645E16789AF195C688181 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,35 +304,50 @@
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.heyitsmejosh.fengshui.watchos;
-				PRODUCT_NAME = FengShui;
+				PRODUCT_NAME = Homeqi;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
+		DAC9E2942A58AD7FFF265EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyitsmejosh.fengshui.watchos;
+				PRODUCT_NAME = Homeqi;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45B9F96FDE63FF83FC677EB9 /* Build configuration list for PBXNativeTarget "FengShuiWatch" */ = {
+		1A5F7D7B2A266CA9AE42FB06 /* Build configuration list for PBXProject "HomeqiWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B43355D044C0D5EC9875D767 /* Debug */,
-				8A6F900B15F60F63003D1B6E /* Release */,
+				1C27DCF022B15D1FE0DAD906 /* Debug */,
+				7DE97996096FB62DE119DDC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		709B2F03CF116635171171BA /* Build configuration list for PBXProject "FengShuiWatch" */ = {
+		4DC28DBB6F6C6531380F7482 /* Build configuration list for PBXNativeTarget "HomeqiWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C73AA0CAE5C9C50A704867E /* Debug */,
-				9ABFF5D9D05813E07A8010F1 /* Release */,
+				902645E16789AF195C688181 /* Debug */,
+				DAC9E2942A58AD7FFF265EB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA4D0BB0D34E54E2632F82BC /* Project object */;
+	rootObject = 440864CF23AC14E04EFC0411 /* Project object */;
 }

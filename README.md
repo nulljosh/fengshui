@@ -37,7 +37,7 @@ Self-check: open `index.html?selftest` and read the console.
 
 ## Apple Watch App
 
-`watchos/FengShuiWatch` is a standalone watchOS companion — no iPhone pairing required (`WKWatchOnly`). It's the same chapter reader as the iOS app: browse the book's chapters and read them on your wrist. Fully on-device, reading the same bundled `content.md`; no backend, no networking. Build with `xcodegen generate` in `watchos/`.
+`watchos/HomeqiWatch` is a standalone watchOS companion — no iPhone pairing required (`WKWatchOnly`). It's the same chapter reader as the iOS app: browse the book's chapters and read them on your wrist. Fully on-device, reading the same bundled `content.md`; no backend, no networking. Build with `xcodegen generate` in `watchos/`.
 
 ## Roadmap
 

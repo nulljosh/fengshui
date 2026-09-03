@@ -1,6 +1,6 @@
 import Foundation
 
-// Ported directly from ios/FengShui/Models.swift. The book is bundled on-device
+// Ported directly from ios/Homeqi/Models.swift. The book is bundled on-device
 // (Resources/content.md) — there is no backend, so nothing here talks to a network.
 
 struct Chapter: Identifiable {

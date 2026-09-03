@@ -8,7 +8,7 @@ struct ChapterListView: View {
                     ChapterDetailView(chapter: chapter)
                 }
             }
-            .navigationTitle("Feng Shui")
+            .navigationTitle("Homeqi")
         }
     }
 }

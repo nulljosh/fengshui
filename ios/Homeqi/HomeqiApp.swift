@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct FengShuiApp: App {
+struct HomeqiApp: App {
     var body: some Scene {
         WindowGroup {
             ChapterListView()

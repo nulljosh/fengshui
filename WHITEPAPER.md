@@ -1,4 +1,4 @@
-# Feng Shui Technical Whitepaper
+# Homeqi Technical Whitepaper
 
 **v1.0** | August 2026
 
@@ -28,7 +28,7 @@ No build step and no framework.
 
 ## iOS
 
-`ios/FengShui` is a native SwiftUI app: a chapter list backed by `content.md`
+`ios/Homeqi` is a native SwiftUI app: a chapter list backed by `content.md`
 bundled into the app, rendered inline. No backend, so it works fully offline and has
 no failure mode beyond the app itself.
 

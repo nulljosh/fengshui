@@ -8,7 +8,7 @@ struct ChapterListView: View {
             List(ContentStore.chapters, selection: $selection) { chapter in
                 NavigationLink(chapter.title, value: chapter.id)
             }
-            .navigationTitle("Feng Shui")
+            .navigationTitle("Homeqi")
         } detail: {
             if let chapter = ContentStore.chapters.first(where: { $0.id == selection }) {
                 ChapterDetailView(chapter: chapter)

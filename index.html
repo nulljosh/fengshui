@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feng Shui — Joshua Trommel</title>
+<title>Homeqi — Joshua Trommel</title>
 <meta name="description" content="Assess your home against the four energy layers of feng shui — land, neighborhood, building, objects. Condensed from Good Fengshui by Eva Wong. No account.">
-<meta property="og:title" content="Feng Shui — assess the place you live">
+<meta property="og:title" content="Homeqi — assess the place you live">
 <meta property="og:description" content="Walk your home through the four energy layers and get back what the book says is working against you. Condensed from Good Fengshui by Eva Wong.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fengshui.heyitsmejosh.com">
-<link rel="preload" href="fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/Geist-Medium.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/Geist-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="tokens.css">
+<link rel="icon" href="icon.svg">
 <style>
-@font-face { font-family:'Geist'; src:url('fonts/Geist-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
-@font-face { font-family:'Geist'; src:url('fonts/Geist-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
-@font-face { font-family:'Geist'; src:url('fonts/Geist-SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
+@import url("https://heyitsmejosh.com/tokens.css");
+
+:root {
+  --accent: #C9784A;
+  --link: #a35a2f;
+  --accent-soft: #faf0e8;
+  --bg: #ffffff;
+  --bg2: #f7f7f8;
+  --text: #1c1d22;
+  --text2: #5c5f6a;
+  --border: #e6e7ea;
+  --font-body: -apple-system, system-ui, "Inter", "Segoe UI", sans-serif;
+  --font-display: var(--font-body);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121316; --bg2: #1a1b1f; --link: #C9784A;
+    --text: #ececf0; --text2: rgba(236,236,240,0.62);
+    --border: rgba(236,236,240,0.12); --accent-soft: #221913;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121316; --bg2: #1a1b1f; --link: #C9784A;
+  --text: #ececf0; --text2: rgba(236,236,240,0.62);
+  --border: rgba(236,236,240,0.12); --accent-soft: #221913;
+}
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -157,7 +177,7 @@ footer a { font-size:0.8125rem; color:var(--text3); text-decoration:none; }
 footer a:hover { color: var(--link, var(--accent)); }
 </style>
   <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#171717">
+  <meta name="theme-color" content="#C9784A">
   <link rel="apple-touch-icon" href="/icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
@@ -176,7 +196,7 @@ footer a:hover { color: var(--link, var(--accent)); }
 
   <main class="main">
     <div class="hero">
-      <h1 class="title">Feng Shui</h1>
+      <h1 class="title">Homeqi</h1>
       <p class="hero-sub">Assess the place you live against the four energy layers, then read the reasoning. Condensed from <em>Good Fengshui</em> by Eva Wong. No account.</p>
       <div class="hero-meta" id="hero-meta"></div>
     </div>
@@ -223,7 +243,7 @@ footer a:hover { color: var(--link, var(--accent)); }
 <section id="install-anywhere">
   <div class="xp-wrap">
     <h2>Install it anywhere.</h2>
-    <p class="xp-lead">Feng Shui runs on every platform. On Windows, Linux and Android it installs straight from the browser &mdash; no store, no download, no runtime. It gets a real window, its own icon, and keeps working offline.</p>
+    <p class="xp-lead">Homeqi runs on every platform. On Windows, Linux and Android it installs straight from the browser &mdash; no store, no download, no runtime. It gets a real window, its own icon, and keeps working offline.</p>
     <div class="xp-grid">
     <div class="xp-card">
       <h3>iPhone &amp; iPad</h3>
@@ -231,7 +251,7 @@ footer a:hover { color: var(--link, var(--accent)); }
     </div>
     <div class="xp-card">
       <h3>Windows</h3>
-      <p>Open the web app in Edge or Chrome, then <strong>Install Feng Shui</strong> from the address bar. It lands in the Start Menu like any other app.</p>
+      <p>Open the web app in Edge or Chrome, then <strong>Install Homeqi</strong> from the address bar. It lands in the Start Menu like any other app.</p>
       <a href="https://fengshui.heyitsmejosh.com">Open &amp; install &rarr;</a>
     </div>
     <div class="xp-card">
@@ -357,7 +377,7 @@ var QUESTIONS = [
 
 /* ---------- state ---------- */
 
-var STORE_KEY = 'fengshui.assessment';
+var STORE_KEY = 'homeqi.assessment';
 var answers = load();
 
 function load() {

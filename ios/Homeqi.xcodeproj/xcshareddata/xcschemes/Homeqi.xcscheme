@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "188EE7CAB3924AD411C6225A"
-               BuildableName = "FengShui.app"
-               BlueprintName = "FengShui"
-               ReferencedContainer = "container:FengShui.xcodeproj">
+               BlueprintIdentifier = "7D677A7A175311941050256C"
+               BuildableName = "Homeqi.app"
+               BlueprintName = "Homeqi"
+               ReferencedContainer = "container:Homeqi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "188EE7CAB3924AD411C6225A"
-            BuildableName = "FengShui.app"
-            BlueprintName = "FengShui"
-            ReferencedContainer = "container:FengShui.xcodeproj">
+            BlueprintIdentifier = "7D677A7A175311941050256C"
+            BuildableName = "Homeqi.app"
+            BlueprintName = "Homeqi"
+            ReferencedContainer = "container:Homeqi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "188EE7CAB3924AD411C6225A"
-            BuildableName = "FengShui.app"
-            BlueprintName = "FengShui"
-            ReferencedContainer = "container:FengShui.xcodeproj">
+            BlueprintIdentifier = "7D677A7A175311941050256C"
+            BuildableName = "Homeqi.app"
+            BlueprintName = "Homeqi"
+            ReferencedContainer = "container:Homeqi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "188EE7CAB3924AD411C6225A"
-            BuildableName = "FengShui.app"
-            BlueprintName = "FengShui"
-            ReferencedContainer = "container:FengShui.xcodeproj">
+            BlueprintIdentifier = "7D677A7A175311941050256C"
+            BuildableName = "Homeqi.app"
+            BlueprintName = "Homeqi"
+            ReferencedContainer = "container:Homeqi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

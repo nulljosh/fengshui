@@ -1,8 +1,8 @@
 <img src="icon.svg" width="80">
 
-# Feng Shui
+# Homeqi
 
-![license](https://img.shields.io/badge/license-MIT-green) [![GitHub](https://img.shields.io/badge/GitHub-nulljosh%2Ffengshui-black?logo=github)](https://github.com/nulljosh/fengshui)
+![license](https://img.shields.io/badge/license-MIT-green) [![GitHub](https://img.shields.io/badge/GitHub-nulljosh%2Fhomeqi-black?logo=github)](https://github.com/nulljosh/homeqi)
 
 **Live:** https://fengshui.heyitsmejosh.com
 
@@ -33,7 +33,7 @@ Self-check: open `index.html?selftest` and read the console.
 
 ## iOS App
 
-`ios/FengShui` is a native SwiftUI reader. It's parked, and it doesn't have the assessment yet. See `roadmap.md`.
+`ios/Homeqi` is a native SwiftUI reader. It's parked, and it doesn't have the assessment yet. See `roadmap.md`.
 
 ## Apple Watch App
 

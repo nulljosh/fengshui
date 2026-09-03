@@ -10,7 +10,7 @@
   4.3(a) wave, and the 5.6 suspension only lifted 2026-08-18. Revisit
   `com.heyitsmejosh.fengshui` registration once those replies resolve.
 - [ ] Consider macOS target once iOS is stable (see uprighty/ios/project.yml for the pattern)
-- [ ] Mirror the assessment into iOS. Web became an assessment tool 2026-08-30; `ios/FengShui`
+- [ ] Mirror the assessment into iOS. Web became an assessment tool 2026-08-30; `ios/Homeqi`
   is still reader-only, so the platforms have diverged. Do this when the 4.3(a) wave resolves
   and the app can actually ship -- an assessment tool is also a better answer to 4.3(a) than a
   single-book reader was.

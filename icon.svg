@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
   <rect width="200" height="200" rx="40" fill="#0f172a"/>
-  <g fill="#fbbf24">
-    <rect x="60" y="44" width="18" height="112" rx="3"/>
-    <rect x="91" y="44" width="18" height="112" rx="3"/>
-    <rect x="122" y="44" width="18" height="112" rx="3"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#C9784A" stroke-width="12"/>
+  <circle cx="100" cy="100" r="34" fill="none" stroke="#E9B08A" stroke-width="10"/>
+  <circle cx="100" cy="100" r="11" fill="#C9784A"/>
+  <g stroke="#E9B08A" stroke-width="10" stroke-linecap="round">
+    <line x1="100" y1="22" x2="100" y2="38"/><line x1="100" y1="162" x2="100" y2="178"/>
+    <line x1="22" y1="100" x2="38" y2="100"/><line x1="162" y1="100" x2="178" y2="100"/>
   </g>
 </svg>

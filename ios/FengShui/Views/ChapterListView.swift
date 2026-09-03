@@ -1,14 +1,20 @@
 import SwiftUI
 
 struct ChapterListView: View {
+    @State private var selection: Chapter.ID?
+
     var body: some View {
-        NavigationStack {
-            List(ContentStore.chapters) { chapter in
-                NavigationLink(chapter.title) {
-                    ChapterDetailView(chapter: chapter)
-                }
+        NavigationSplitView {
+            List(ContentStore.chapters, selection: $selection) { chapter in
+                NavigationLink(chapter.title, value: chapter.id)
             }
             .navigationTitle("Feng Shui")
+        } detail: {
+            if let chapter = ContentStore.chapters.first(where: { $0.id == selection }) {
+                ChapterDetailView(chapter: chapter)
+            } else {
+                ContentUnavailableView("Select a Chapter", systemImage: "book")
+            }
         }
     }
 }

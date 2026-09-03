@@ -26,7 +26,7 @@ Answers stay in `localStorage`. No account. No backend. No build step.
 ## Files
 
 - `index.html`: the whole app. Assessment, reader, questions
-- `content.md`: the chapter text, shared by web and iOS
+- `content.md`: the chapter text, shared by web, iOS, and watchOS
 - `tokens.css`: the house design tokens
 
 Self-check: open `index.html?selftest` and read the console.
@@ -34,6 +34,10 @@ Self-check: open `index.html?selftest` and read the console.
 ## iOS App
 
 `ios/FengShui` is a native SwiftUI reader. It's parked, and it doesn't have the assessment yet. See `roadmap.md`.
+
+## Apple Watch App
+
+`watchos/FengShuiWatch` is a standalone watchOS companion — no iPhone pairing required (`WKWatchOnly`). It's the same chapter reader as the iOS app: browse the book's chapters and read them on your wrist. Fully on-device, reading the same bundled `content.md`; no backend, no networking. Build with `xcodegen generate` in `watchos/`.
 
 ## Roadmap
 

@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343FAC2EC10CD0E036053C7D /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF3567E0B56F2114FD1E5 /* ContentStore.swift */; };
+		3D91975FD7E9356B942921E8 /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */; };
+		47B9EACC3BCCE92CDCC3E44E /* FengShuiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */; };
+		5FB4BB06404661D6FAE539C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E0E2C17CA51F366C76A68C /* Assets.xcassets */; };
+		8EE860347AA5B5E18F8D6376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57B6F49D86EE09F8EB0670 /* ContentView.swift */; };
+		B7D5F3A2981D5D4E107AA5B4 /* content.md in Resources */ = {isa = PBXBuildFile; fileRef = 64C2259E881A68D7288591EE /* content.md */; };
+		BA216CF46996C9CFFA57ADC9 /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FengShuiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
+		64C2259E881A68D7288591EE /* content.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = content.md; sourceTree = "<group>"; };
+		6C57B6F49D86EE09F8EB0670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		978DF3567E0B56F2114FD1E5 /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		B2E0E2C17CA51F366C76A68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengShuiWatchApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		085411EF773C1684B4531CD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				978DF3567E0B56F2114FD1E5 /* ContentStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CABF53FAE6EDEEDC936E170 = {
+			isa = PBXGroup;
+			children = (
+				085411EF773C1684B4531CD8 /* Models */,
+				9727E45E3FC93793086A73A6 /* Resources */,
+				62351310E85444BB6C6FBF50 /* Views */,
+				F5C874A13CED1282615C49D1 /* watchos */,
+				6C4AC06FB761F7B1D2720748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62351310E85444BB6C6FBF50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				324A81B068E72BB5E3C7EBCE /* ChapterDetailView.swift */,
+				8139B29EF4336ABAF3322EA2 /* ChapterListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C4AC06FB761F7B1D2720748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9727E45E3FC93793086A73A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64C2259E881A68D7288591EE /* content.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5C874A13CED1282615C49D1 /* watchos */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0E2C17CA51F366C76A68C /* Assets.xcassets */,
+				6C57B6F49D86EE09F8EB0670 /* ContentView.swift */,
+				C56F2A812F14738C22B056EA /* FengShuiWatchApp.swift */,
+				085411EF773C1684B4531CD8 /* Models */,
+				9727E45E3FC93793086A73A6 /* Resources */,
+				62351310E85444BB6C6FBF50 /* Views */,
+			);
+			name = watchos;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8193D009658B6D812C98227 /* FengShuiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B9F96FDE63FF83FC677EB9 /* Build configuration list for PBXNativeTarget "FengShuiWatch" */;
+			buildPhases = (
+				99FFCEB413C6388DA23867D5 /* Sources */,
+				654B9A8C4C5546479B1D18CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FengShuiWatch;
+			packageProductDependencies = (
+			);
+			productName = FengShuiWatch;
+			productReference = 28E09C1521C34C31DBA53C7A /* FengShuiWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA4D0BB0D34E54E2632F82BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B8193D009658B6D812C98227 = {
+						DevelopmentTeam = QMM486NPYC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 709B2F03CF116635171171BA /* Build configuration list for PBXProject "FengShuiWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3CABF53FAE6EDEEDC936E170;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6C4AC06FB761F7B1D2720748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8193D009658B6D812C98227 /* FengShuiWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		654B9A8C4C5546479B1D18CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB4BB06404661D6FAE539C1 /* Assets.xcassets in Resources */,
+				B7D5F3A2981D5D4E107AA5B4 /* content.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99FFCEB413C6388DA23867D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA216CF46996C9CFFA57ADC9 /* ChapterDetailView.swift in Sources */,
+				3D91975FD7E9356B942921E8 /* ChapterListView.swift in Sources */,
+				343FAC2EC10CD0E036053C7D /* ContentStore.swift in Sources */,
+				8EE860347AA5B5E18F8D6376 /* ContentView.swift in Sources */,
+				47B9EACC3BCCE92CDCC3E44E /* FengShuiWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C73AA0CAE5C9C50A704867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		8A6F900B15F60F63003D1B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyitsmejosh.fengshui.watchos;
+				PRODUCT_NAME = FengShui;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		9ABFF5D9D05813E07A8010F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		B43355D044C0D5EC9875D767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyitsmejosh.fengshui.watchos;
+				PRODUCT_NAME = FengShui;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45B9F96FDE63FF83FC677EB9 /* Build configuration list for PBXNativeTarget "FengShuiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43355D044C0D5EC9875D767 /* Debug */,
+				8A6F900B15F60F63003D1B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		709B2F03CF116635171171BA /* Build configuration list for PBXProject "FengShuiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C73AA0CAE5C9C50A704867E /* Debug */,
+				9ABFF5D9D05813E07A8010F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA4D0BB0D34E54E2632F82BC /* Project object */;
+}

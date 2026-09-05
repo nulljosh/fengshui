@@ -31,3 +31,4 @@ bookrank, homeward.
 **Reopen 2026-08-30.** The premise above no longer holds -- the page now saves an
 assessment, so there is real state an agent could read and write
 (`get_assessment` / `answer_question`). Worth a second look, not urgent.
+- [ ] native (kmp) port — sibling apps have one, this doesn't (project-sync 2026-09-05)
